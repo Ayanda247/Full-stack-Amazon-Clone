@@ -1,5 +1,7 @@
 <?php
 
+ini_set('max_execution_time', 300); // Increase maximum execution time to 300 seconds (5 minutes)
+
 use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
