@@ -5,7 +5,7 @@ import InputLabel from '@/Components/InputLabel.vue';
 import Modal from '@/Components/Modal.vue';
 import SecondaryButton from '@/Components/SecondaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
-import { useForm } from '@inertiajs/vue3';
+import { useForm } from '@inertiajs/inertia-vue3';
 import { nextTick, ref } from 'vue';
 
 const confirmingUserDeletion = ref(false);
@@ -38,7 +38,7 @@ const closeModal = () => {
 </script>
 
 <template>
-    <section class="space-y-6">
+    <section class="space-y-6 mx-auto">
         <header>
             <h2 class="text-lg font-medium text-gray-900">Delete Account</h2>
 
@@ -81,7 +81,7 @@ const closeModal = () => {
                     <SecondaryButton @click="closeModal"> Cancel </SecondaryButton>
 
                     <DangerButton
-                        class="ms-3"
+                        class="ml-3"
                         :class="{ 'opacity-25': form.processing }"
                         :disabled="form.processing"
                         @click="deleteUser"
@@ -93,3 +93,4 @@ const closeModal = () => {
         </Modal>
     </section>
 </template>
+

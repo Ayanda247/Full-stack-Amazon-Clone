@@ -3,7 +3,7 @@ import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
-import { useForm } from '@inertiajs/vue3';
+import { useForm } from '@inertiajs/inertia-vue3';
 import { ref } from 'vue';
 
 const passwordInput = ref(null);
@@ -34,7 +34,7 @@ const updatePassword = () => {
 </script>
 
 <template>
-    <section>
+    <section class="mx-auto">
         <header>
             <h2 class="text-lg font-medium text-gray-900">Update Password</h2>
 
@@ -91,15 +91,11 @@ const updatePassword = () => {
             <div class="flex items-center gap-4">
                 <PrimaryButton :disabled="form.processing">Save</PrimaryButton>
 
-                <Transition
-                    enter-active-class="transition ease-in-out"
-                    enter-from-class="opacity-0"
-                    leave-active-class="transition ease-in-out"
-                    leave-to-class="opacity-0"
-                >
+                <Transition enter-from-class="opacity-0" leave-to-class="opacity-0" class="transition ease-in-out">
                     <p v-if="form.recentlySuccessful" class="text-sm text-gray-600">Saved.</p>
                 </Transition>
             </div>
         </form>
     </section>
 </template>
+

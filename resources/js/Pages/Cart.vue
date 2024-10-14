@@ -108,3 +108,5 @@ const totalWithoutDot = () => {
     </AuthenticatedLayout>
 </template>
 
+
+
