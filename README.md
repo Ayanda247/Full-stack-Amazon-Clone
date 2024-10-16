@@ -2,6 +2,9 @@
 
 Welcome to the Amazon Clone project! This repository contains the source code for a fully-functional e-commerce application inspired by Amazon. Built with Laravel, PHP, and Vue.js, this project demonstrates the capabilities of modern web development frameworks and practices.
 
+![Project Image 1](./public/images/readme-img-1.png)
+![Project Image 2](./public/images/readme-img-2.png)
+
 ## Features
 
 - User authentication and authorization
