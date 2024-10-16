@@ -70,11 +70,9 @@ Ensure you have the following installed:
 
     ```env
     DB_CONNECTION=sqlite
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
     DB_DATABASE=amazon_clone
-    DB_USERNAME=root
-    DB_PASSWORD=
+    DB_USERNAME=null
+    DB_PASSWORD=null
     ```
 
 2. Migrate your database:
