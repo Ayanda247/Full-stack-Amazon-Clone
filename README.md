@@ -29,7 +29,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Ayanda247/amazon-clone.git
+    git clone https://github.com/Ayanda247/Full-stack-Amazon-Clone.git
     cd amazon-clone
     ```
 
